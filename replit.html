@@ -1,0 +1,7697 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="google-signin-client-id" content="721724668570-nbkv1cfusk7kk4eni4pjvepaus73b13t.apps.googleusercontent.com" />
+    <meta name="google-signin-scope" content="profile email" />
+    <meta property="og:site_name" content="Google Cloud" />
+    <meta property="og:type" content="website" /><meta name="theme-color" content="#039be5" /><meta charset="utf-8" />
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="manifest" href="/_pwa/cloud/manifest.json" crossorigin="use-credentials" />
+    <link rel="preconnect" href="//www.gstatic.com" crossorigin="" />
+    <link rel="preconnect" href="//fonts.gstatic.com" crossorigin="" />
+    <link rel="preconnect" href="//fonts.googleapis.com" crossorigin="" />
+    <link rel="preconnect" href="//apis.google.com" crossorigin="" />
+    <link rel="preconnect" href="//www.google-analytics.com" crossorigin="" /><link rel="stylesheet" href="//fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto:400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700|Material+Icons&display=swap" /><link rel="stylesheet" href="https://www.gstatic.com/devrel-devsite/prod/v1674d466be3b1154327dd11cf186e748303b1e92ae31ff35df0f5192fbd777ea/cloud/css/app.css" /><link rel="shortcut icon" href="https://www.gstatic.com/devrel-devsite/prod/v1674d466be3b1154327dd11cf186e748303b1e92ae31ff35df0f5192fbd777ea/cloud/images/favicons/onecloud/favicon.ico" />
+    <link rel="apple-touch-icon" href="https://www.gstatic.com/devrel-devsite/prod/v1674d466be3b1154327dd11cf186e748303b1e92ae31ff35df0f5192fbd777ea/cloud/images/favicons/onecloud/super_cloud.png" /><link rel="canonical" href="https://cloud.google.com/customers/repl-it" /><link rel="search" type="application/opensearchdescription+xml" title="Google Cloud" href="https://cloud.google.com/s/opensearch.xml" />
+      
+
+<title>Repl.it ケーススタディ｜Google Cloud</title>
+
+<meta property="og:title" content="Repl.it Case Study &nbsp;|&nbsp; Google Cloud" /><meta name="description" content="With GCP Repl.it is building an online development environment for students and developers to learn, collaborate, build, host, and ship applications" />
+  <meta property="og:description" content="With GCP Repl.it is building an online development environment for students and developers to learn, collaborate, build, host, and ship applications" /><meta property="og:url" content="https://cloud.google.com/customers/repl-it" /><meta property="og:image" content="https://cloud.google.com/_static/cloud/images/social-icon-google-cloud-1200-630.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" /><meta property="og:locale" content="en" /><meta name="twitter:card" content="summary_large_image" />
+  <meta name="xsrf_token" content="9bEChgt2I9k2j97idrNG2SaLcGLPRunnoDNHijA_w_U6MTYyMTIzNDMzODc2NDIyMQ" />
+  
+
+  <meta name="session_expiry" content="0" />
+  
+    
+    
+    <meta property="og:image" content="https://lh3.googleusercontent.com/7ZPCcCD8kpwS1zBcusiAUE21qZYKRgqSnDj_5PHQKzAR0UWolxIKLPS7S4H1WSvFTBTDg772BblmG-9ZvXUwHqwmHKofCjLMKO2BpQ=w1200" />
+    
+    
+    
+    
+    
+    
+    
+  
+
+    </head>
+  <body class="" template="page" theme="cloud-theme" type="marketing" layout="full" free-trial="" pending="">
+    <devsite-progress type="indeterminate" id="app-progress"></devsite-progress>
+  
+    <section class="devsite-wrapper"><cloudx-track></cloudx-track>
+<cloudx-utils-init></cloudx-utils-init>
+
+<devsite-header keep-tabs-visible="">
+  
+
+
+  <div class="devsite-collapsible-section
+    ">
+    <div class="devsite-header-background">
+      
+        
+          <div class="devsite-product-id-row" hidden="">
+            <div class="devsite-product-description-row">
+              
+              
+            </div>
+            
+          </div>
+                  
+            
+          
+          
+          
+
+          
+        </div>
+      
+    </div>
+  </div>
+
+</div>
+
+
+
+  
+
+  
+</devsite-header>
+      <devsite-book-nav scrollbars="" hidden="">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="devsite-book-nav devsite-nav nocontent" aria-label="Side menu">
+  <div class="devsite-mobile-header">
+    <button type="button" id="devsite-close-nav" class="devsite-header-icon-button button-flat material-icons gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Close navigation" aria-label="Close navigation">
+    </button>
+    <div class="devsite-product-name-wrapper">
+
+  <a href="/" class="devsite-site-logo-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Site logo" track-type="globalNav" track-name="googleCloud" track-metadata-position="nav" track-metadata-eventdetail="nav">
+
+  <img src="https://www.gstatic.com/devrel-devsite/prod/v1674d466be3b1154327dd11cf186e748303b1e92ae31ff35df0f5192fbd777ea/cloud/images/cloud-logo.svg" class="devsite-site-logo" alt="Google Cloud" />
+
+</a>
+
+
+  
+      <span class="devsite-product-name">
+        
+        
+        <ul class="devsite-breadcrumb-list">
+  
+  <li class="devsite-breadcrumb-item
+             devsite-has-google-wordmark">
+    
+    
+    
+      
+      
+    
+  </li>
+  
+</ul>
+      </span>
+    
+
+</div>
+  </div>
+
+  <div class="devsite-book-nav-wrapper">
+    <div class="devsite-mobile-nav-top">
+      
+        <ul class="devsite-nav-list">
+          
+            <li class="devsite-nav-item">
+              
+  
+  <a href="/why-google-cloud" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Why Google" track-type="globalNav" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="whyGoogle">
+  
+    <span class="devsite-nav-text" tooltip="">
+      なぜGoogleは
+   </span>
+    
+  
+  </a>
+  
+
+  
+    <ul class="devsite-nav-responsive-tabs devsite-nav-has-menu
+               ">
+      
+<li class="devsite-nav-item">
+
+  
+  <span class="devsite-nav-title" tooltip="">
+  
+    <span class="devsite-nav-text" tooltip="" menu="Why Google">
+      さらに
+   </span>
+    
+    <span class="devsite-nav-icon material-icons" data-icon="forward" menu="Why Google">
+    </span>
+    
+  
+  </span>
+  
+
+</li>
+
+    </ul>
+  
+              
+            </li>
+          
+            <li class="devsite-nav-item">
+              
+  
+  <a href="/solutions" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Solutions" track-type="globalNav" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="solutions">
+  
+    <span class="devsite-nav-text" tooltip="">
+      ソリューション
+   </span>
+    
+  
+  </a>
+  
+
+  
+    <ul class="devsite-nav-responsive-tabs devsite-nav-has-menu
+               ">
+      
+<li class="devsite-nav-item">
+
+  
+  <span class="devsite-nav-title" tooltip="">
+  
+    <span class="devsite-nav-text" tooltip="" menu="Solutions">
+      さらに
+   </span>
+    
+    <span class="devsite-nav-icon material-icons" data-icon="forward" menu="Solutions">
+    </span>
+    
+  
+  </span>
+  
+
+</li>
+
+    </ul>
+  
+              
+            </li>
+          
+            <li class="devsite-nav-item">
+              
+  
+  <a href="/products" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Products" track-type="globalNav" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="products">
+  
+    <span class="devsite-nav-text" tooltip="">
+      製品
+   </span>
+    
+  
+  </a>
+  
+
+  
+    <ul class="devsite-nav-responsive-tabs devsite-nav-has-menu
+               ">
+      
+<li class="devsite-nav-item">
+
+  
+  <span class="devsite-nav-title" tooltip="">
+  
+    <span class="devsite-nav-text" tooltip="" menu="Products">
+      さらに
+   </span>
+    
+    <span class="devsite-nav-icon material-icons" data-icon="forward" menu="Products">
+    </span>
+    
+  
+  </span>
+  
+
+</li>
+
+    </ul>
+  
+              
+            </li>
+          
+            <li class="devsite-nav-item">
+              
+  
+  <a href="/pricing" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Pricing" track-type="globalNav" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="pricing">
+  
+    <span class="devsite-nav-text" tooltip="">
+      価格
+   </span>
+    
+  
+  </a>
+  
+
+  
+    <ul class="devsite-nav-responsive-tabs devsite-nav-has-menu
+               ">
+      
+<li class="devsite-nav-item">
+
+  
+  <span class="devsite-nav-title" tooltip="">
+  
+    <span class="devsite-nav-text" tooltip="" menu="Pricing">
+      さらに
+   </span>
+    
+    <span class="devsite-nav-icon material-icons" data-icon="forward" menu="Pricing">
+    </span>
+    
+  
+  </span>
+  
+
+</li>
+
+    </ul>
+  
+              
+            </li>
+          
+            <li class="devsite-nav-item">
+              
+  
+  <a href="/start" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Getting started" track-type="globalNav" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="gettingStarted">
+  
+    <span class="devsite-nav-text" tooltip="">
+      はじめに
+   </span>
+    
+  
+  </a>
+  
+
+  
+    <ul class="devsite-nav-responsive-tabs devsite-nav-has-menu
+               ">
+      
+<li class="devsite-nav-item">
+
+  
+  <span class="devsite-nav-title" tooltip="">
+  
+    <span class="devsite-nav-text" tooltip="" menu="Getting started">
+      さらに
+   </span>
+    
+    <span class="devsite-nav-icon material-icons" data-icon="forward" menu="Getting started">
+    </span>
+    
+  
+  </span>
+  
+
+</li>
+
+    </ul>
+  
+              
+            </li>
+          
+            <li class="devsite-nav-item">
+              
+  
+  <a href="/docs" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Docs" track-type="globalNav" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="docs">
+  
+    <span class="devsite-nav-text" tooltip="">
+      ドキュメント
+   </span>
+    
+  
+  </a>
+  
+
+  
+              
+            </li>
+          
+            <li class="devsite-nav-item">
+              
+  
+  <a href="/support-hub" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Support" track-type="globalNav" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="support">
+  
+    <span class="devsite-nav-text" tooltip="">
+      サポート
+   </span>
+    
+  
+  </a>
+  
+
+  
+              
+            </li>
+          
+            <li class="devsite-nav-item">
+              
+  
+  <a href="/customers" class="devsite-nav-title gc-analytics-event
+              devsite-nav-has-children
+              devsite-nav-active" data-category="Site-Wide Custom Events" data-label="Responsive Tab: Customers" track-type="globalNav" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="customers">
+  
+    <span class="devsite-nav-text" tooltip="">
+      お客様
+   </span>
+    
+    <span class="devsite-nav-icon material-icons" data-icon="forward">
+    </span>
+    
+  
+  </a>
+  
+
+  
+              
+            </li>
+          
+          
+    
+<li class="devsite-nav-item">
+
+  
+  <a href="//console.cloud.google.com/" class="devsite-nav-title gc-analytics-event
+              
+              " track-name="console" track-type="globalNav" track-metadata-position="nav" track-metadata-eventdetail="nav" referrerpolicy="no-referrer-when-downgrade" data-category="Site-Wide Custom Events" data-label="Responsive Tab: Console" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="console">
+  
+    <span class="devsite-nav-text" tooltip="">
+      コンソール
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+  
+          
+            
+    
+      
+        
+<li class="devsite-nav-item">
+
+  
+  <a href="/contact" class="cta-button-secondary button" track-name="sales" data-overflow="devsite-tabs-wrapper" data-overflow-wrapper="tab" track-metadata-eventdetail="nav" data-overflow-container="left" track-type="contact" track-metadata-position="nav" data-category="Site-Wide Custom Events" data-label="Responsive Tab: Contact Us" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="contactUs">
+  
+    <span class="devsite-nav-text" tooltip="">
+      お問い合わせ
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+      
+    
+      
+        
+<li class="devsite-nav-item">
+
+  
+  <a href="//console.cloud.google.com/freetrial" class="cloud-free-trial-button cta-button-primary button-primary button cloud-button cloud-button--primary" track-type="freeTrial" referrerpolicy="no-referrer-when-downgrade" data-overflow-class="devsite-header-link devsite-top-button button cloud-free-trial-button cloud-free-trial-enabled cloud-button cloud-button--primary" track-metadata-position="nav" data-overflow-container="right" data-overflow="devsite-top-logo-row" track-metadata-eventdetail="nav" track-name="gcpCta" data-category="Site-Wide Custom Events" data-label="Responsive Tab: Get started for free" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="getStartedForFree">
+  
+    <span class="devsite-nav-text" tooltip="">
+      無料で始められる
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+      
+    
+  
+          
+        </ul>
+      
+    </div>
+    
+      <div class="devsite-mobile-nav-bottom" role="navigation">
+        
+        
+          
+    
+      
+      <ul class="devsite-nav-list" menu="Why Google" aria-label="Side menu" hidden="">
+        
+          
+            
+              
+<li class="devsite-nav-item devsite-nav-heading">
+
+  
+  <span class="devsite-nav-title" tooltip="">
+  
+    <span class="devsite-nav-text" tooltip="">
+      革新的なソリューションであなたのビジネスを変える
+   </span>
+    
+  
+  </span>
+  
+
+</li>
+
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/why-google-cloud" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Learn more" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="learnMore">
+  
+    <span class="devsite-nav-text" tooltip="">
+      さらに詳しく
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+        
+          
+            
+              
+<li class="devsite-nav-item devsite-nav-heading">
+
+  
+  <span class="devsite-nav-title" tooltip="">
+  
+    <span class="devsite-nav-text" tooltip="">
+      なぜGoogle Cloudなのか
+   </span>
+    
+  
+  </span>
+  
+
+</li>
+
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/why-google-cloud" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Choosing Google Cloud" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="choosingGoogleCloud">
+  
+    <span class="devsite-nav-text" tooltip="">
+      Google Cloudの選択
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/multicloud" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Multicloud" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="multicloud">
+  
+    <span class="devsite-nav-text" tooltip="">
+      Multicloud
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/security" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Trust and security" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="trustAndSecurity">
+  
+    <span class="devsite-nav-text" tooltip="">
+      信頼と安心
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/infrastructure" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Global infrastructure" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="globalInfrastructure">
+  
+    <span class="devsite-nav-text" tooltip="">
+      グローバルインフラ
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/data-cloud" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Data cloud" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="dataCloud">
+  
+    <span class="devsite-nav-text" tooltip="">
+      データクラウド
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+        
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/open-cloud" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Open cloud" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="openCloud">
+  
+    <span class="devsite-nav-text" tooltip="">
+      オープンクラウド
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/sustainability" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Sustainability" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="sustainability">
+  
+    <span class="devsite-nav-text" tooltip="">
+      持続可能性
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/analyst-reports" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Analyst reports" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="analystReports">
+  
+    <span class="devsite-nav-text" tooltip="">
+      アナリストレポート
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/customers" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Customer stories" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="customerStories">
+  
+    <span class="devsite-nav-text" tooltip="">
+      お客様の声
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/blog" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Google Cloud Blog" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="googleCloudBlog">
+  
+    <span class="devsite-nav-text" tooltip="">
+      Google Cloud Blog
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+        
+      </ul>
+    
+  
+    
+      
+      <ul class="devsite-nav-list" menu="Solutions" aria-label="Side menu" hidden="">
+        
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/solutions#industry-solutions" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Industry Solutions" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="industrySolutions">
+  
+    <span class="devsite-nav-text" tooltip="">
+      産業別ソリューション
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/solutions/retail" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Retail" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="retail">
+  
+    <span class="devsite-nav-text" tooltip="">
+      リテール
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/solutions/cpg" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Consumer Packaged Goods" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="consumerPackagedGoods">
+  
+    <span class="devsite-nav-text" tooltip="">
+      消費者向けパッケージ商品
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/solutions/financial-services" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Financial Services" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="financialServices">
+  
+    <span class="devsite-nav-text" tooltip="">
+      金融サービス
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/solutions/healthcare-life-sciences" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Healthcare and Life Sciences" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="healthcareAndLifeSciences">
+  
+    <span class="devsite-nav-text" tooltip="">
+      ヘルスケア＆ライフサイエンス
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/solutions/media-entertainment" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Media and Entertainment" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="mediaAndEntertainment">
+  
+    <span class="devsite-nav-text" tooltip="">
+      メディア・エンタテインメント
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/solutions/telecommunications" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Telecommunications" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="telecommunications">
+  
+    <span class="devsite-nav-text" tooltip="">
+      通信
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/solutions/gaming" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Gaming" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="gaming">
+  
+    <span class="devsite-nav-text" tooltip="">
+      ゲーミング
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/solutions/manufacturing" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Manufacturing" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="manufacturing">
+  
+    <span class="devsite-nav-text" tooltip="">
+      製造業
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/solutions/supply-chain-logistics" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Supply Chain and Logistics" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="supplyChainAndLogistics">
+  
+    <span class="devsite-nav-text" tooltip="">
+      サプライチェーン・ロジスティクス
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/solutions/government" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Government" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="government">
+  
+    <span class="devsite-nav-text" tooltip="">
+      ガバメント
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/solutions/education" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Education" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="education">
+  
+    <span class="devsite-nav-text" tooltip="">
+      教育
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/solutions/smb" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Small and Medium Business" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="smallAndMediumBusiness">
+  
+    <span class="devsite-nav-text" tooltip="">
+      中堅・中小企業
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/solutions" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: See all solutions" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="seeAllSolutions">
+  
+    <span class="devsite-nav-text" tooltip="">
+      すべてのソリューションを見る
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+        
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/solutions/application-modernization" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Application Modernization" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="applicationModernization">
+  
+    <span class="devsite-nav-text" tooltip="">
+      アプリケーションの近代化
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/solutions/hybrid-and-multicloud-application-platform" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Hybrid and Multi-cloud Application Platform" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="hybridAndMultiCloudApplicationPlatform">
+  
+    <span class="devsite-nav-text" tooltip="">
+      ハイブリッド／マルチクラウド・アプリケーション・プラットフォーム
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/solutions/cloud-native-app-development" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Cloud-Native App Development" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="cloud-NativeAppDevelopment">
+  
+    <span class="devsite-nav-text" tooltip="">
+      クラウドネイティブなアプリ開発
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/solutions/unlocking-legacy-applications" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: API Management" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="aPIManagement">
+  
+    <span class="devsite-nav-text" tooltip="">
+      APIマネジメント
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/serverless" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Serverless Solutions" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="serverlessSolutions">
+  
+    <span class="devsite-nav-text" tooltip="">
+      サーバーレスソリューション
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/devops" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: DevOps" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="devOps">
+  
+    <span class="devsite-nav-text" tooltip="">
+      DevOps
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/solutions/continuous-delivery" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Continuous Delivery (CD)" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="continuousDelivery(CD)">
+  
+    <span class="devsite-nav-text" tooltip="">
+      継続的デリバリー（CD
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/solutions/continuous-integration" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Continuous Integration (CI)" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="continuousIntegration(CI)">
+  
+    <span class="devsite-nav-text" tooltip="">
+      継続的インテグレーション(CI)
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/solutions/mainframe-modernization" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Mainframe Modernization" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="mainframeModernization">
+  
+    <span class="devsite-nav-text" tooltip="">
+      メインフレーム・モダナイゼーション
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/solutions/web-hosting" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Hosting" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="hosting">
+  
+    <span class="devsite-nav-text" tooltip="">
+      ホスティング
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+        
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/solutions/ai" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Artificial Intelligence" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="artificialIntelligence">
+  
+    <span class="devsite-nav-text" tooltip="">
+      人工知能
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/solutions/build-and-use-ai" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Build and Use AI" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="buildAndUseAI">
+  
+    <span class="devsite-nav-text" tooltip="">
+      AIの構築と活用
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/solutions/contact-center" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Contact Center AI" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="contactCenterAI">
+  
+    <span class="devsite-nav-text" tooltip="">
+      コンタクトセンターAI
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/solutions/document-ai" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Document AI" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="documentAI">
+  
+    <span class="devsite-nav-text" tooltip="">
+      ドキュメントAI
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/solutions/talent-solution" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Cloud Talent Solution" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="cloudTalentSolution">
+  
+    <span class="devsite-nav-text" tooltip="">
+      クラウド・タレント・ソリューション
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+        
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/solutions/business-application-platform" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Business Application Platform" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="businessApplicationPlatform">
+  
+    <span class="devsite-nav-text" tooltip="">
+      ビジネスアプリケーションプラットフォーム
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/solutions/new-channels-using-apis" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: New Business Channels Using APIs" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="newBusinessChannelsUsingAPIs">
+  
+    <span class="devsite-nav-text" tooltip="">
+      APIを活用した新たなビジネスチャネル
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/solutions/unlocking-legacy-applications" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Unlocking Legacy Applications Using APIs" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="unlockingLegacyApplicationsUsingAPIs">
+  
+    <span class="devsite-nav-text" tooltip="">
+      APIによるレガシーアプリケーションのアンロック
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/apigee/solutions/open-banking-apix" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Open Banking APIx" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="openBankingAPIx">
+  
+    <span class="devsite-nav-text" tooltip="">
+      オープンバンキングAPIx
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+        
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/solutions/databases" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Databases" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="databases">
+  
+    <span class="devsite-nav-text" tooltip="">
+      データベース
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/solutions/database-migration" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Database Migration" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="databaseMigration">
+  
+    <span class="devsite-nav-text" tooltip="">
+      データベースの移行
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/solutions/database-modernization" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Database Modernization" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="databaseModernization">
+  
+    <span class="devsite-nav-text" tooltip="">
+      データベースの近代化
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/products/databases" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Google Cloud Databases" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="googleCloudDatabases">
+  
+    <span class="devsite-nav-text" tooltip="">
+      Google Cloudのデータベース
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/solutions/migrate-oracle-workloads" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Migrate Oracle workloads to Google Cloud" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="migrateOracleWorkloadsToGoogleCloud">
+  
+    <span class="devsite-nav-text" tooltip="">
+      OracleワークロードのGoogle Cloudへの移行
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/solutions/open-source-databases" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Open Source Databases" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="openSourceDatabases">
+  
+    <span class="devsite-nav-text" tooltip="">
+      オープンソース・データベース
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/sql-server" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: SQL Server on Google Cloud" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="sQLServerOnGoogleCloud">
+  
+    <span class="devsite-nav-text" tooltip="">
+      SQL Server on Google Cloud
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+        
+          
+            
+              
+<li class="devsite-nav-item devsite-nav-heading">
+
+  
+  <span class="devsite-nav-title" tooltip="">
+  
+    <span class="devsite-nav-text" tooltip="">
+      デジタルトランスフォーメーション
+   </span>
+    
+  
+  </span>
+  
+
+</li>
+
+            
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/solutions/business-continuity" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Business Continuity" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="businessContinuity">
+  
+    <span class="devsite-nav-text" tooltip="">
+      事業継続性
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/solutions/business-innovation" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Digital Innovation" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="digitalInnovation">
+  
+    <span class="devsite-nav-text" tooltip="">
+      デジタル・イノベーション
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/solutions/operational-efficiency" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Operational Efficiency" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="operationalEfficiency">
+  
+    <span class="devsite-nav-text" tooltip="">
+      オペレーションの効率化
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/covid19" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: COVID-19 Solutions" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="cOVID-19Solutions">
+  
+    <span class="devsite-nav-text" tooltip="">
+      COVID-19ソリューション
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/covid19-healthcare" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: COVID-19 Solutions for the Healthcare Industry" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="cOVID-19SolutionsForTheHealthcareIndustry">
+  
+    <span class="devsite-nav-text" tooltip="">
+      COVID-19 ヘルスケア業界向けソリューション
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+        
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/solutions/infrastructure-modernization" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Infrastructure Modernization" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="infrastructureModernization">
+  
+    <span class="devsite-nav-text" tooltip="">
+      インフラの近代化
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/solutions/application-migration" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Application Migration" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="applicationMigration">
+  
+    <span class="devsite-nav-text" tooltip="">
+      アプリケーションの移行
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/solutions/sap" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: SAP on Google Cloud" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="sAPOnGoogleCloud">
+  
+    <span class="devsite-nav-text" tooltip="">
+      SAP on Google Cloud
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/solutions/hpc" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: High Performance Computing" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="highPerformanceComputing">
+  
+    <span class="devsite-nav-text" tooltip="">
+      ハイパフォーマンス・コンピューティング
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/windows" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Windows on Google Cloud" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="windowsOnGoogleCloud">
+  
+    <span class="devsite-nav-text" tooltip="">
+      Windows on Google Cloud
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/solutions/migration-center" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Data Center Migration" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="dataCenterMigration">
+  
+    <span class="devsite-nav-text" tooltip="">
+      データセンターの移行
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/solutions/active-assist" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Active Assist" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="activeAssist">
+  
+    <span class="devsite-nav-text" tooltip="">
+      アクティブアシスト
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/solutions/virtual-desktops" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Virtual Desktops" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="virtualDesktops">
+  
+    <span class="devsite-nav-text" tooltip="">
+      仮想デスクトップ
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/solutions/cloud-migration-program" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Rapid Assessment &amp; Migration Program (RAMP)" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="rapidAssessment&amp;MigrationProgram(RAMP)">
+  
+    <span class="devsite-nav-text" tooltip="">
+      ラピッドアセスメント＆マイグレーションプログラム（RAMP
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+        
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="https://workspace.google.com/enterprise/" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Productivity and Collaboration" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="productivityAndCollaboration">
+  
+    <span class="devsite-nav-text" tooltip="">
+      生産性とコラボレーション
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="https://workspace.google.com/solutions/enterprise/?enterprise-benefits_activeEl=connect" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Google Workspace" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="googleWorkspace">
+  
+    <span class="devsite-nav-text" tooltip="">
+      Google ワークスペース
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="https://workspace.google.com/essentials/" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Google Workspace Essentials" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="googleWorkspaceEssentials">
+  
+    <span class="devsite-nav-text" tooltip="">
+      Google ワークスペース エッセンシャル
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/identity" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Cloud Identity" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="cloudIdentity">
+  
+    <span class="devsite-nav-text" tooltip="">
+      クラウド・アイデンティティ
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="https://chromeenterprise.google/" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Chrome Enterprise" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="chromeEnterprise">
+  
+    <span class="devsite-nav-text" tooltip="">
+      クロームエンタープライズ
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="https://workspace.google.com/products/cloud-search/" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Cloud Search" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="cloudSearch">
+  
+    <span class="devsite-nav-text" tooltip="">
+      クラウド検索
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+        
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/solutions/security" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Security" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="security">
+  
+    <span class="devsite-nav-text" tooltip="">
+      セキュリティ
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/solutions/security-analytics-and-operations" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Security Analytics and Operations" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="securityAnalyticsAndOperations">
+  
+    <span class="devsite-nav-text" tooltip="">
+      セキュリティ・アナリティクス＆オペレーション
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/solutions/web-app-and-api-protection" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Web App and API Protection" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="webAppAndAPIProtection">
+  
+    <span class="devsite-nav-text" tooltip="">
+      ウェブアプリとAPIの保護
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+        
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/solutions/smart-analytics" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Smart Analytics" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="smartAnalytics">
+  
+    <span class="devsite-nav-text" tooltip="">
+      スマート・アナリティクス
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/solutions/data-warehouse-modernization" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Data Warehouse Modernization" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="dataWarehouseModernization">
+  
+    <span class="devsite-nav-text" tooltip="">
+      データウェアハウスの近代化
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/solutions/stream-analytics" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Stream Analytics" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="streamAnalytics">
+  
+    <span class="devsite-nav-text" tooltip="">
+      ストリーム解析
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/solutions/marketing-analytics" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Marketing Analytics" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="marketingAnalytics">
+  
+    <span class="devsite-nav-text" tooltip="">
+      マーケティング・アナリティクス
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/solutions/data-lake" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Data Lake Modernization" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="dataLakeModernization">
+  
+    <span class="devsite-nav-text" tooltip="">
+      データレイク・モダナイゼーション
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/looker" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Business Intelligence" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="businessIntelligence">
+  
+    <span class="devsite-nav-text" tooltip="">
+      ビジネス・インテリジェンス
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+        
+      </ul>
+    
+  
+    
+      
+      <ul class="devsite-nav-list" menu="Products" aria-label="Side menu" hidden="">
+        
+          
+            
+              
+<li class="devsite-nav-item devsite-nav-heading">
+
+  
+  <span class="devsite-nav-title" tooltip="">
+  
+    <span class="devsite-nav-text" tooltip="">
+      注目製品
+   </span>
+    
+  
+  </span>
+  
+
+</li>
+
+            
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/compute" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Compute Engine" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="computeEngine">
+  
+    <span class="devsite-nav-text" tooltip="">
+      Compute Engine
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/storage" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Cloud Storage" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="cloudStorage">
+  
+    <span class="devsite-nav-text" tooltip="">
+      クラウドストレージ
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/sdk" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Cloud SDK" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="cloudSDK">
+  
+    <span class="devsite-nav-text" tooltip="">
+      クラウドSDK
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/sql" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Cloud SQL" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="cloudSQL">
+  
+    <span class="devsite-nav-text" tooltip="">
+      クラウドSQL
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/kubernetes-engine" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Google Kubernetes Engine" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="googleKubernetesEngine">
+  
+    <span class="devsite-nav-text" tooltip="">
+      Google Kubernetes Engine
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/bigquery" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: BigQuery" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="bigQuery">
+  
+    <span class="devsite-nav-text" tooltip="">
+      BigQuery
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/cdn" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Cloud CDN" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="cloudCDN">
+  
+    <span class="devsite-nav-text" tooltip="">
+      クラウドCDN
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/dataflow" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Dataflow" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="dataflow">
+  
+    <span class="devsite-nav-text" tooltip="">
+      データフロー
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/products/operations" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Operations" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="operations">
+  
+    <span class="devsite-nav-text" tooltip="">
+      オペレーション
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/run" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Cloud Run" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="cloudRun">
+  
+    <span class="devsite-nav-text" tooltip="">
+      クラウドラン
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/anthos" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Anthos" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="anthos">
+  
+    <span class="devsite-nav-text" tooltip="">
+      アンソロジー
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/products" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: See all products (100+)" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="seeAllProducts(100+)">
+  
+    <span class="devsite-nav-text" tooltip="">
+      すべての製品を見る (100+)
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+        
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/products/ai" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: AI and Machine Learning" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="aIAndMachineLearning">
+  
+    <span class="devsite-nav-text" tooltip="">
+      AIと機械学習
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/speech-to-text" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Speech-to-Text" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="speechTo-Text">
+  
+    <span class="devsite-nav-text" tooltip="">
+      音声からテキストへ
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/vision" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Vision AI" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="visionAI">
+  
+    <span class="devsite-nav-text" tooltip="">
+      ビジョンAI
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/text-to-speech" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Text-to-Speech" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="textTo-Speech">
+  
+    <span class="devsite-nav-text" tooltip="">
+      音声読み上げ機能
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/translate" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Cloud Translation" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="cloudTranslation">
+  
+    <span class="devsite-nav-text" tooltip="">
+      クラウド翻訳
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/natural-language" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Cloud Natural Language" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="cloudNaturalLanguage">
+  
+    <span class="devsite-nav-text" tooltip="">
+      クラウド自然言語
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/automl" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: AutoML" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="autoML">
+  
+    <span class="devsite-nav-text" tooltip="">
+      オートML
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/ai-platform" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: AI Platform" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="aIPlatform">
+  
+    <span class="devsite-nav-text" tooltip="">
+      AIプラットフォーム
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/video-intelligence" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Video AI" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="videoAI">
+  
+    <span class="devsite-nav-text" tooltip="">
+      ビデオAI
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/ai-infrastructure" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: AI Infrastructure" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="aIInfrastructure">
+  
+    <span class="devsite-nav-text" tooltip="">
+      AIインフラ
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/dialogflow" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Dialogflow" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="dialogflow">
+  
+    <span class="devsite-nav-text" tooltip="">
+      ダイアログフロー
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/automl-tables" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: AutoML Tables" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="autoMLTables">
+  
+    <span class="devsite-nav-text" tooltip="">
+      AutoMLテーブル
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/products#ai-and-machine-learning" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: See all AI and machine learning products" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="seeAllAIAndMachineLearningProducts">
+  
+    <span class="devsite-nav-text" tooltip="">
+      すべてのAI・機械学習製品を見る
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+        
+          
+            
+              
+<li class="devsite-nav-item devsite-nav-heading">
+
+  
+  <span class="devsite-nav-title" tooltip="">
+  
+    <span class="devsite-nav-text" tooltip="">
+      APIマネジメント
+   </span>
+    
+  
+  </span>
+  
+
+</li>
+
+            
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/apigee/api-management" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Apigee API Management" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="apigeeAPIManagement">
+  
+    <span class="devsite-nav-text" tooltip="">
+      Apigee APIマネジメント
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/endpoints" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Cloud Endpoints" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="cloudEndpoints">
+  
+    <span class="devsite-nav-text" tooltip="">
+      クラウドエンドポイント
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/healthcare" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Cloud Healthcare API" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="cloudHealthcareAPI">
+  
+    <span class="devsite-nav-text" tooltip="">
+      クラウドヘルスケアAPI
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/appsheet" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: AppSheet" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="appSheet">
+  
+    <span class="devsite-nav-text" tooltip="">
+      AppSheet
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/apigee" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: API Gateway" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="aPIGateway">
+  
+    <span class="devsite-nav-text" tooltip="">
+      APIゲートウェイ
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+        
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/products/compute" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Compute" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="compute">
+  
+    <span class="devsite-nav-text" tooltip="">
+      計算
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/compute" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Compute Engine" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="computeEngine">
+  
+    <span class="devsite-nav-text" tooltip="">
+      Compute Engine
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/appengine" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: App Engine" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="appEngine">
+  
+    <span class="devsite-nav-text" tooltip="">
+      App Engine
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/gpu" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Cloud GPUs" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="cloudGPUs">
+  
+    <span class="devsite-nav-text" tooltip="">
+      クラウドGPU
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/migrate/compute-engine" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Migrate for Compute Engine" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="migrateForComputeEngine">
+  
+    <span class="devsite-nav-text" tooltip="">
+      Compute Engineへの移行
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/preemptible-vms" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Preemptible VMs" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="preemptibleVMs">
+  
+    <span class="devsite-nav-text" tooltip="">
+      プリエンプティブルVM
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/shielded-vm" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Shielded VMs" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="shieldedVMs">
+  
+    <span class="devsite-nav-text" tooltip="">
+      シールドされたVM
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/sole-tenant-nodes" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Sole-Tenant Nodes" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="sole-TenantNodes">
+  
+    <span class="devsite-nav-text" tooltip="">
+      単独テナント型ノード
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/bare-metal" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Bare Metal" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="bareMetal">
+  
+    <span class="devsite-nav-text" tooltip="">
+      ベアメタル
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/recommender" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Recommender" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="recommender">
+  
+    <span class="devsite-nav-text" tooltip="">
+      推薦者
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/vmware-engine" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: VMware Engine" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="vMwareEngine">
+  
+    <span class="devsite-nav-text" tooltip="">
+      VMwareエンジン
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/run" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Cloud Run" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="cloudRun">
+  
+    <span class="devsite-nav-text" tooltip="">
+      クラウドラン
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/products#compute" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: See all compute products" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="seeAllComputeProducts">
+  
+    <span class="devsite-nav-text" tooltip="">
+      すべてのCompute製品を見る
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+        
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/containers" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Containers" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="containers">
+  
+    <span class="devsite-nav-text" tooltip="">
+      コンテナ
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/kubernetes-engine" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Google Kubernetes Engine" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="googleKubernetesEngine">
+  
+    <span class="devsite-nav-text" tooltip="">
+      Google Kubernetes Engine
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/container-registry" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Container Registry" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="containerRegistry">
+  
+    <span class="devsite-nav-text" tooltip="">
+      コンテナ・レジストリ
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/containers/security" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Container Security" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="containerSecurity">
+  
+    <span class="devsite-nav-text" tooltip="">
+      コンテナのセキュリティ
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/build" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Cloud Build" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="cloudBuild">
+  
+    <span class="devsite-nav-text" tooltip="">
+      クラウドビルド
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/ai-platform/deep-learning-containers" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Deep Learning Containers" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="deepLearningContainers">
+  
+    <span class="devsite-nav-text" tooltip="">
+      深層学習コンテナ
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/kubernetes-applications" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Kubernetes Applications" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="kubernetesApplications">
+  
+    <span class="devsite-nav-text" tooltip="">
+      Kubernetesのアプリケーション
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/artifact-registry" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Artifact Registry" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="artifactRegistry">
+  
+    <span class="devsite-nav-text" tooltip="">
+      アーティファクト・レジストリ
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/knative" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Knative" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="knative">
+  
+    <span class="devsite-nav-text" tooltip="">
+      クネイティヴ
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/run" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Cloud Run" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="cloudRun">
+  
+    <span class="devsite-nav-text" tooltip="">
+      クラウドラン
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/code" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Cloud Code" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="cloudCode">
+  
+    <span class="devsite-nav-text" tooltip="">
+      クラウドコード
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+        
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/products/big-data" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Data Analytics" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="dataAnalytics">
+  
+    <span class="devsite-nav-text" tooltip="">
+      データ分析
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/bigquery" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: BigQuery" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="bigQuery">
+  
+    <span class="devsite-nav-text" tooltip="">
+      BigQuery
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/looker" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Looker" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="looker">
+  
+    <span class="devsite-nav-text" tooltip="">
+      ルッカー
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/dataflow" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Dataflow" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="dataflow">
+  
+    <span class="devsite-nav-text" tooltip="">
+      データフロー
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/pubsub" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Pub/Sub" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="pub/Sub">
+  
+    <span class="devsite-nav-text" tooltip="">
+      パブ/サブ
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/dataproc" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Dataproc" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="dataproc">
+  
+    <span class="devsite-nav-text" tooltip="">
+      データロック
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/data-fusion" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Cloud Data Fusion" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="cloudDataFusion">
+  
+    <span class="devsite-nav-text" tooltip="">
+      クラウドデータフュージョン
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/composer" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Cloud Composer" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="cloudComposer">
+  
+    <span class="devsite-nav-text" tooltip="">
+      クラウドコンポーザー
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/data-catalog" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Data Catalog" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="dataCatalog">
+  
+    <span class="devsite-nav-text" tooltip="">
+      データカタログ
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/dataprep" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Dataprep" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="dataprep">
+  
+    <span class="devsite-nav-text" tooltip="">
+      データプレップ
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="https://marketingplatform.google.com/about/data-studio/" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Google Data Studio" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="googleDataStudio">
+  
+    <span class="devsite-nav-text" tooltip="">
+      Google Data Studio
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="https://marketingplatform.google.com/about/enterprise/#?modal_active=none" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Google Marketing Platform" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="googleMarketingPlatform">
+  
+    <span class="devsite-nav-text" tooltip="">
+      Googleマーケティングプラットフォーム
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/life-sciences" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Cloud Life Sciences" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="cloudLifeSciences">
+  
+    <span class="devsite-nav-text" tooltip="">
+      クラウド・ライフサイエンス
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+        
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/products/databases" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Databases" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="databases">
+  
+    <span class="devsite-nav-text" tooltip="">
+      データベース
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/bigtable" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Cloud Bigtable" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="cloudBigtable">
+  
+    <span class="devsite-nav-text" tooltip="">
+      クラウドBigtable
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/firestore" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Firestore" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="firestore">
+  
+    <span class="devsite-nav-text" tooltip="">
+      ファイアーストア
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/memorystore" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Memorystore" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="memorystore">
+  
+    <span class="devsite-nav-text" tooltip="">
+      メモリーストア
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/spanner" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Cloud Spanner" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="cloudSpanner">
+  
+    <span class="devsite-nav-text" tooltip="">
+      クラウドスパナ
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/sql" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Cloud SQL" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="cloudSQL">
+  
+    <span class="devsite-nav-text" tooltip="">
+      クラウドSQL
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/database-migration" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Database Migration Service" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="databaseMigrationService">
+  
+    <span class="devsite-nav-text" tooltip="">
+      データベース移行サービス
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/bare-metal" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Bare Metal" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="bareMetal">
+  
+    <span class="devsite-nav-text" tooltip="">
+      ベアメタル
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="https://firebase.google.com/products/realtime-database/" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Firebase Realtime Database" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="firebaseRealtimeDatabase">
+  
+    <span class="devsite-nav-text" tooltip="">
+      Firebase Realtime Database
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+        
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/products/tools" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Developer Tools" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="developerTools">
+  
+    <span class="devsite-nav-text" tooltip="">
+      デベロッパーツール
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/artifact-registry" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Artifact Registry" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="artifactRegistry">
+  
+    <span class="devsite-nav-text" tooltip="">
+      アーティファクト・レジストリ
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/build" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Cloud Build" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="cloudBuild">
+  
+    <span class="devsite-nav-text" tooltip="">
+      クラウドビルド
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/code" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Cloud Code" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="cloudCode">
+  
+    <span class="devsite-nav-text" tooltip="">
+      クラウドコード
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/deployment-manager" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Cloud Deployment Manager" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="cloudDeploymentManager">
+  
+    <span class="devsite-nav-text" tooltip="">
+      クラウド・デプロイメント・マネージャー
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/sdk" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Cloud SDK" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="cloudSDK">
+  
+    <span class="devsite-nav-text" tooltip="">
+      クラウドSDK
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/scheduler" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Cloud Scheduler" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="cloudScheduler">
+  
+    <span class="devsite-nav-text" tooltip="">
+      Cloud Scheduler
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/source-repositories" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Cloud Source Repositories" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="cloudSourceRepositories">
+  
+    <span class="devsite-nav-text" tooltip="">
+      クラウドソースレポジトリー
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/tasks" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Cloud Tasks" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="cloudTasks">
+  
+    <span class="devsite-nav-text" tooltip="">
+      クラウドタスク
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/container-registry" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Container Registry" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="containerRegistry">
+  
+    <span class="devsite-nav-text" tooltip="">
+      コンテナ・レジストリ
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/tekton" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Tekton" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="tekton">
+  
+    <span class="devsite-nav-text" tooltip="">
+      テクトン
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/products/tools" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: See all developer tools" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="seeAllDeveloperTools">
+  
+    <span class="devsite-nav-text" tooltip="">
+      すべての開発ツールを見る
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+        
+          
+            
+              
+<li class="devsite-nav-item devsite-nav-heading">
+
+  
+  <span class="devsite-nav-title" tooltip="">
+  
+    <span class="devsite-nav-text" tooltip="">
+      ヘルスケア＆ライフサイエンス
+   </span>
+    
+  
+  </span>
+  
+
+</li>
+
+            
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/apigee/solutions/healthcare-apix" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Apigee Healthcare APIx" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="apigeeHealthcareAPIx">
+  
+    <span class="devsite-nav-text" tooltip="">
+      Apigee Healthcare APIx
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/healthcare" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Cloud Healthcare API" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="cloudHealthcareAPI">
+  
+    <span class="devsite-nav-text" tooltip="">
+      クラウドヘルスケアAPI
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/life-sciences" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Cloud Life Sciences" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="cloudLifeSciences">
+  
+    <span class="devsite-nav-text" tooltip="">
+      クラウド・ライフサイエンス
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/natural-language" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Healthcare Natural Language AI" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="healthcareNaturalLanguageAI">
+  
+    <span class="devsite-nav-text" tooltip="">
+      ヘルスケア 自然言語系AI
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+        
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/anthos" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Hybrid and Multi-cloud" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="hybridAndMultiCloud">
+  
+    <span class="devsite-nav-text" tooltip="">
+      ハイブリッドとマルチクラウド
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/anthos" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Anthos" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="anthos">
+  
+    <span class="devsite-nav-text" tooltip="">
+      アンソロジー
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/looker" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Looker" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="looker">
+  
+    <span class="devsite-nav-text" tooltip="">
+      ルッカー
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/anthos/run" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Cloud Run for Anthos" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="cloudRunForAnthos">
+  
+    <span class="devsite-nav-text" tooltip="">
+      アントスのクラウドラン
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/kubernetes-applications" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Google Cloud Marketplace for Anthos" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="googleCloudMarketplaceForAnthos">
+  
+    <span class="devsite-nav-text" tooltip="">
+      Google Cloud Marketplace for Anthos
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/migrate/anthos" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Migrate for Anthos" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="migrateForAnthos">
+  
+    <span class="devsite-nav-text" tooltip="">
+      Anthosへの移行
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/products/operations" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Operations" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="operations">
+  
+    <span class="devsite-nav-text" tooltip="">
+      オペレーション
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/build" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Cloud Build" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="cloudBuild">
+  
+    <span class="devsite-nav-text" tooltip="">
+      クラウドビルド
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/traffic-director" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Traffic Director" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="trafficDirector">
+  
+    <span class="devsite-nav-text" tooltip="">
+      トラフィック・ディレクター
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/apigee" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Apigee API Management" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="apigeeAPIManagement">
+  
+    <span class="devsite-nav-text" tooltip="">
+      Apigee APIマネジメント
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+        
+          
+            
+              
+<li class="devsite-nav-item devsite-nav-heading">
+
+  
+  <span class="devsite-nav-title" tooltip="">
+  
+    <span class="devsite-nav-text" tooltip="">
+      モノのインターネット
+   </span>
+    
+  
+  </span>
+  
+
+</li>
+
+            
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/iot-core" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Cloud IoT Core" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="cloudIoTCore">
+  
+    <span class="devsite-nav-text" tooltip="">
+      クラウドIoTコア
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/edge-tpu" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Edge TPU" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="edgeTPU">
+  
+    <span class="devsite-nav-text" tooltip="">
+      エッジTPU
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+        
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/products/management" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Management Tools" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="managementTools">
+  
+    <span class="devsite-nav-text" tooltip="">
+      管理ツール
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/shell" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Cloud Shell" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="cloudShell">
+  
+    <span class="devsite-nav-text" tooltip="">
+      クラウドシェル
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/cloud-console" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Cloud Console" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="cloudConsole">
+  
+    <span class="devsite-nav-text" tooltip="">
+      クラウドコンソール
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/deployment-manager" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Cloud Deployment Manager" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="cloudDeploymentManager">
+  
+    <span class="devsite-nav-text" tooltip="">
+      クラウド・デプロイメント・マネージャー
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/console-app" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Cloud Mobile App" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="cloudMobileApp">
+  
+    <span class="devsite-nav-text" tooltip="">
+      クラウド・モバイル・アプリ
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/apis" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Cloud APIs" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="cloudAPIs">
+  
+    <span class="devsite-nav-text" tooltip="">
+      クラウドAPI
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/private-catalog" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Private Catalog" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="privateCatalog">
+  
+    <span class="devsite-nav-text" tooltip="">
+      プライベートカタログ
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/cost-management" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Cost Management" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="costManagement">
+  
+    <span class="devsite-nav-text" tooltip="">
+      コストマネジメント
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/solutions/active-assist" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Intelligent Management" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="intelligentManagement">
+  
+    <span class="devsite-nav-text" tooltip="">
+      インテリジェント・マネジメント
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+        
+          
+            
+              
+<li class="devsite-nav-item devsite-nav-heading">
+
+  
+  <span class="devsite-nav-title" tooltip="">
+  
+    <span class="devsite-nav-text" tooltip="">
+      メディアとゲーム
+   </span>
+    
+  
+  </span>
+  
+
+</li>
+
+            
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/game-servers" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Game Servers" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="gameServers">
+  
+    <span class="devsite-nav-text" tooltip="">
+      ゲームサーバー
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/opencue" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: OpenCue" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="openCue">
+  
+    <span class="devsite-nav-text" tooltip="">
+      オープンキュー
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+        
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/products/cloud-migration" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Migration" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="migration">
+  
+    <span class="devsite-nav-text" tooltip="">
+      マイグレーション
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/solutions/application-migration" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Application Migration" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="applicationMigration">
+  
+    <span class="devsite-nav-text" tooltip="">
+      アプリケーションの移行
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/bigquery/transfer" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: BigQuery Data Transfer Service" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="bigQueryDataTransferService">
+  
+    <span class="devsite-nav-text" tooltip="">
+      BigQueryデータ転送サービス
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/foundation-toolkit" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Cloud Foundation Toolkit" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="cloudFoundationToolkit">
+  
+    <span class="devsite-nav-text" tooltip="">
+      Cloud Foundation Toolkit
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/database-migration" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Database Migration Service" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="databaseMigrationService">
+  
+    <span class="devsite-nav-text" tooltip="">
+      データベース移行サービス
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/migrate/anthos" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Migrate for Anthos" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="migrateForAnthos">
+  
+    <span class="devsite-nav-text" tooltip="">
+      Anthosへの移行
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/migrate/compute-engine" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Migrate for Compute Engine" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="migrateForComputeEngine">
+  
+    <span class="devsite-nav-text" tooltip="">
+      Compute Engineへの移行
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/solutions/cloud-migration-program" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Rapid Assessment &amp; Migration Program (RAMP)" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="rapidAssessment&amp;MigrationProgram(RAMP)">
+  
+    <span class="devsite-nav-text" tooltip="">
+      ラピッドアセスメント＆マイグレーションプログラム（RAMP
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/transfer-appliance" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Transfer Appliance" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="transferAppliance">
+  
+    <span class="devsite-nav-text" tooltip="">
+      トランスファー・アプライアンス
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/storage-transfer-service" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Storage Transfer Service" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="storageTransferService">
+  
+    <span class="devsite-nav-text" tooltip="">
+      ストレージ転送サービス
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/vmware-engine" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: VMware Engine" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="vMwareEngine">
+  
+    <span class="devsite-nav-text" tooltip="">
+      VMwareエンジン
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+        
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/products/networking" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Networking" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="networking">
+  
+    <span class="devsite-nav-text" tooltip="">
+      ネットワーキング
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/armor" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Cloud Armor" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="cloudArmor">
+  
+    <span class="devsite-nav-text" tooltip="">
+      クラウドアーマー
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/cdn" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Cloud CDN" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="cloudCDN">
+  
+    <span class="devsite-nav-text" tooltip="">
+      クラウドCDN
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/dns" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Cloud DNS" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="cloudDNS">
+  
+    <span class="devsite-nav-text" tooltip="">
+      クラウドDNS
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/load-balancing" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Cloud Load Balancing" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="cloudLoadBalancing">
+  
+    <span class="devsite-nav-text" tooltip="">
+      クラウド・ロードバランシング
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/nat" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Cloud NAT" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="cloudNAT">
+  
+    <span class="devsite-nav-text" tooltip="">
+      クラウドNAT
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/hybrid-connectivity" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Hybrid Connectivity" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="hybridConnectivity">
+  
+    <span class="devsite-nav-text" tooltip="">
+      ハイブリッド接続
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/network-intelligence-center" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Network Intelligence Center" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="networkIntelligenceCenter">
+  
+    <span class="devsite-nav-text" tooltip="">
+      ネットワーク・インテリジェンス・センター
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/network-tiers" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Network Service Tiers" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="networkServiceTiers">
+  
+    <span class="devsite-nav-text" tooltip="">
+      ネットワークサービス層
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/network-telemetry" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Network Telemetry" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="networkTelemetry">
+  
+    <span class="devsite-nav-text" tooltip="">
+      ネットワークテレメトリー
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/traffic-director" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Traffic Director" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="trafficDirector">
+  
+    <span class="devsite-nav-text" tooltip="">
+      トラフィック・ディレクター
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/vpc" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Virtual Private Cloud" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="virtualPrivateCloud">
+  
+    <span class="devsite-nav-text" tooltip="">
+      バーチャルプライベートクラウド
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/service-directory" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Service Directory" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="serviceDirectory">
+  
+    <span class="devsite-nav-text" tooltip="">
+      サービスディレクトリ
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+        
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/products/operations" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Operations" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="operations">
+  
+    <span class="devsite-nav-text" tooltip="">
+      オペレーション
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/logging" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Cloud Logging" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="cloudLogging">
+  
+    <span class="devsite-nav-text" tooltip="">
+      クラウド・ロギング
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/monitoring" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Cloud Monitoring" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="cloudMonitoring">
+  
+    <span class="devsite-nav-text" tooltip="">
+      クラウド・モニタリング
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/error-reporting" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Error Reporting" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="errorReporting">
+  
+    <span class="devsite-nav-text" tooltip="">
+      エラー報告
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/kubernetes-engine-monitoring" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Kubernetes Engine Monitoring" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="kubernetesEngineMonitoring">
+  
+    <span class="devsite-nav-text" tooltip="">
+      Kubernetesエンジンのモニタリング
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/trace" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Cloud Trace" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="cloudTrace">
+  
+    <span class="devsite-nav-text" tooltip="">
+      クラウドトレース
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/profiler" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Cloud Profiler" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="cloudProfiler">
+  
+    <span class="devsite-nav-text" tooltip="">
+      クラウドプロファイラー
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/debugger" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Cloud Debugger" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="cloudDebugger">
+  
+    <span class="devsite-nav-text" tooltip="">
+      クラウドデバッガ
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/solutions/active-assist" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Intelligent Operations" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="intelligentOperations">
+  
+    <span class="devsite-nav-text" tooltip="">
+      インテリジェント・オペレーション
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+        
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/products/security-and-identity" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Security and Identity" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="securityAndIdentity">
+  
+    <span class="devsite-nav-text" tooltip="">
+      セキュリティとアイデンティティ
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/iam" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Cloud IAM" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="cloudIAM">
+  
+    <span class="devsite-nav-text" tooltip="">
+      クラウドIAM
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/assured-workloads" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Assured Workloads" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="assuredWorkloads">
+  
+    <span class="devsite-nav-text" tooltip="">
+      確実なワークロード
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/security-key-management" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Cloud Key Management" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="cloudKeyManagement">
+  
+    <span class="devsite-nav-text" tooltip="">
+      クラウドキーマネージメント
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/confidential-computing" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Confidential Computing" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="confidentialComputing">
+  
+    <span class="devsite-nav-text" tooltip="">
+      コンフィデンシャル・コンピューティング
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/security-command-center" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Security Command Center" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="securityCommandCenter">
+  
+    <span class="devsite-nav-text" tooltip="">
+      セキュリティ・コマンド・センター
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/dlp" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Cloud Data Loss Prevention" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="cloudDataLossPrevention">
+  
+    <span class="devsite-nav-text" tooltip="">
+      クラウド・データ・ロス・プリベンション
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/managed-microsoft-ad" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Managed Service for Microsoft Active Directory" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="managedServiceForMicrosoftActiveDirectory">
+  
+    <span class="devsite-nav-text" tooltip="">
+      Microsoft Active Directoryのマネージドサービス
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/access-transparency" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Access Transparency" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="accessTransparency">
+  
+    <span class="devsite-nav-text" tooltip="">
+      アクセスの透明性
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/titan-security-key" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Titan Security Key" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="titanSecurityKey">
+  
+    <span class="devsite-nav-text" tooltip="">
+      タイタン セキュリティ キー
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/secret-manager" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Secret Manager" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="secretManager">
+  
+    <span class="devsite-nav-text" tooltip="">
+      シークレットマネージャー
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/beyondcorp-enterprise" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: BeyondCorp Enterprise" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="beyondCorpEnterprise">
+  
+    <span class="devsite-nav-text" tooltip="">
+      BeyondCorp Enterprise
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/products#security-and-identity" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: See all security and identity products" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="seeAllSecurityAndIdentityProducts">
+  
+    <span class="devsite-nav-text" tooltip="">
+      すべてのセキュリティ・アイデンティティ製品を見る
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+        
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/serverless" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Serverless Computing" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="serverlessComputing">
+  
+    <span class="devsite-nav-text" tooltip="">
+      サーバーレス・コンピューティング
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/run" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Cloud Run" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="cloudRun">
+  
+    <span class="devsite-nav-text" tooltip="">
+      クラウドラン
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/functions" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Cloud Functions" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="cloudFunctions">
+  
+    <span class="devsite-nav-text" tooltip="">
+      クラウド機能
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/appengine" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: App Engine" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="appEngine">
+  
+    <span class="devsite-nav-text" tooltip="">
+      App Engine
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/workflows" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Workflows" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="workflows">
+  
+    <span class="devsite-nav-text" tooltip="">
+      ワークフロー
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+        
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/products/storage" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Storage" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="storage">
+  
+    <span class="devsite-nav-text" tooltip="">
+      ストレージ
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/products/storage" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: All Storage Products" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="allStorageProducts">
+  
+    <span class="devsite-nav-text" tooltip="">
+      すべてのストレージ製品
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/storage" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Cloud Storage" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="cloudStorage">
+  
+    <span class="devsite-nav-text" tooltip="">
+      クラウドストレージ
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/filestore" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Filestore" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="filestore">
+  
+    <span class="devsite-nav-text" tooltip="">
+      ファイルストア
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/persistent-disk" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Persistent Disk" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="persistentDisk">
+  
+    <span class="devsite-nav-text" tooltip="">
+      パーシステント・ディスク
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="https://firebase.google.com/products/storage" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Cloud Storage for Firebase" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="cloudStorageForFirebase">
+  
+    <span class="devsite-nav-text" tooltip="">
+      Firebase用クラウドストレージ
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/local-ssd" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Local SSD" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="localSSD">
+  
+    <span class="devsite-nav-text" tooltip="">
+      ローカルSSD
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/storage/archival" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Archival Storage" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="archivalStorage">
+  
+    <span class="devsite-nav-text" tooltip="">
+      アーカイバル・ストレージ
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/storage-transfer-service" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Storage Transfer Service" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="storageTransferService">
+  
+    <span class="devsite-nav-text" tooltip="">
+      ストレージ転送サービス
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="https://workspace.google.com/essentials/" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Google Workspace Essentials" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="googleWorkspaceEssentials">
+  
+    <span class="devsite-nav-text" tooltip="">
+      Google ワークスペース エッセンシャル
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+        
+      </ul>
+    
+  
+    
+      
+      <ul class="devsite-nav-list" menu="Pricing" aria-label="Side menu" hidden="">
+        
+          
+            
+              
+<li class="devsite-nav-item devsite-nav-heading">
+
+  
+  <span class="devsite-nav-title" tooltip="">
+  
+    <span class="devsite-nav-text" tooltip="">
+      Google Cloudでより多くのことをより安く
+   </span>
+    
+  
+  </span>
+  
+
+</li>
+
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/contact" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Contact Us" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="contactUs">
+  
+    <span class="devsite-nav-text" tooltip="">
+      お問い合わせ
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+        
+          
+            
+              
+<li class="devsite-nav-item devsite-nav-heading">
+
+  
+  <span class="devsite-nav-title" tooltip="">
+  
+    <span class="devsite-nav-text" tooltip="">
+      Google Cloud Platform
+   </span>
+    
+  
+  </span>
+  
+
+</li>
+
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/pricing" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Overview" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="overview">
+  
+    <span class="devsite-nav-text" tooltip="">
+      概要
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/pricing/list" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Price list" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="priceList">
+  
+    <span class="devsite-nav-text" tooltip="">
+      価格表
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/products/calculator" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Calculators" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="calculators">
+  
+    <span class="devsite-nav-text" tooltip="">
+      計算機
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/free" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Free on Google Cloud" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="freeOnGoogleCloud">
+  
+    <span class="devsite-nav-text" tooltip="">
+      Google Cloudでは無料
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+        
+          
+            
+              
+<li class="devsite-nav-item devsite-nav-heading">
+
+  
+  <span class="devsite-nav-title" tooltip="">
+  
+    <span class="devsite-nav-text" tooltip="">
+      その他のクラウド製品
+   </span>
+    
+  
+  </span>
+  
+
+</li>
+
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="https://workspace.google.com/pricing.html" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Google Workspace" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="googleWorkspace">
+  
+    <span class="devsite-nav-text" tooltip="">
+      Google ワークスペース
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/maps-platform/pricing" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Google Maps Platform" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="googleMapsPlatform">
+  
+    <span class="devsite-nav-text" tooltip="">
+      Google Mapsプラットフォーム
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/identity#pricing" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Cloud Identity" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="cloudIdentity">
+  
+    <span class="devsite-nav-text" tooltip="">
+      クラウド・アイデンティティ
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="https://apigee.com/api-management/#/pricing" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Apigee" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="apigee">
+  
+    <span class="devsite-nav-text" tooltip="">
+      アピジー
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="https://firebase.google.com/pricing/" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Firebase" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="firebase">
+  
+    <span class="devsite-nav-text" tooltip="">
+      Firebase
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="https://www.zyncrender.com/#pricing" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Zync Render" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="zyncRender">
+  
+    <span class="devsite-nav-text" tooltip="">
+      Zync Render
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+        
+      </ul>
+    
+  
+    
+      
+      <ul class="devsite-nav-list" menu="Getting started" aria-label="Side menu" hidden="">
+        
+          
+            
+              
+<li class="devsite-nav-item devsite-nav-heading">
+
+  
+  <span class="devsite-nav-title" tooltip="">
+  
+    <span class="devsite-nav-text" tooltip="">
+      Google Cloudを始めよう
+   </span>
+    
+  
+  </span>
+  
+
+</li>
+
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="https://console.cloud.google.com/freetrial" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Try GCP Free" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="tryGCPFree">
+  
+    <span class="devsite-nav-text" tooltip="">
+      GCPを無料で試す
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/gcp/getting-started" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Get Started" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="getStarted">
+  
+    <span class="devsite-nav-text" tooltip="">
+      始める
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+        
+          
+            
+              
+<li class="devsite-nav-item devsite-nav-heading">
+
+  
+  <span class="devsite-nav-title" tooltip="">
+  
+    <span class="devsite-nav-text" tooltip="">
+      ひとりで始めるためのリソース
+   </span>
+    
+  
+  </span>
+  
+
+</li>
+
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/gcp/getting-started" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Quickstarts" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="quickstarts">
+  
+    <span class="devsite-nav-text" tooltip="">
+      クイックスタート
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/marketplace" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: GCP Marketplace" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="gCPMarketplace">
+  
+    <span class="devsite-nav-text" tooltip="">
+      GCPマーケットプレイス
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/training" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Training" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="training">
+  
+    <span class="devsite-nav-text" tooltip="">
+      トレーニング
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/certification" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Certification" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="certification">
+  
+    <span class="devsite-nav-text" tooltip="">
+      認証
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+        
+          
+            
+              
+<li class="devsite-nav-item devsite-nav-heading">
+
+  
+  <span class="devsite-nav-title" tooltip="">
+  
+    <span class="devsite-nav-text" tooltip="">
+      専門家の助けを借りる
+   </span>
+    
+  
+  </span>
+  
+
+</li>
+
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/consulting" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Consulting" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="consulting">
+  
+    <span class="devsite-nav-text" tooltip="">
+      コンサルティング
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/tam" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Technical Account Management" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="technicalAccountManagement">
+  
+    <span class="devsite-nav-text" tooltip="">
+      テクニカルアカウントマネージメント
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="https://cloud.withgoogle.com/partners/" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Find a Partner" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="findAPartner">
+  
+    <span class="devsite-nav-text" tooltip="">
+      パートナーを探す
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/partners/become-a-partner" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Become a Partner" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="becomeAPartner">
+  
+    <span class="devsite-nav-text" tooltip="">
+      パートナーになる
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+        
+          
+            
+            
+              
+<li class="devsite-nav-item">
+
+  
+  <a href="/getting-started" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: More ways to get started" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav" track-name="moreWaysToGetStarted">
+  
+    <span class="devsite-nav-text" tooltip="">
+      より多くの方法でスタートする
+   </span>
+    
+  
+  </a>
+  
+
+</li>
+
+            
+          
+        
+      </ul>
+    
+  
+    
+  
+    
+  
+    
+  
+        
+        
+          
+    
+  
+        
+      </div>
+    
+  </div>
+</nav>
+        
+      </devsite-book-nav>
+      <section id="gc-wrapper">
+        <main role="main" class="devsite-main-content">
+          <devsite-toc class="devsite-nav" disabled=""></devsite-toc>
+          <devsite-content>
+            
+              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<article class="devsite-article"><style>
+      /* Styles inlined from /css/customer-stories.css */
+.flex {
+  display: flex;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.row-wrap {
+  flex-flow: row wrap;
+}
+
+.flex-ac {
+  align-items: center;
+}
+
+.devsite-full-width-page .devsite-main-content,
+body[layout=full] .devsite-main-content {
+  max-width: 1440px;
+  padding: 0;
+}
+
+#cloud-site .background-grey img,
+#cloud-site .hero {
+  padding: 0;
+}
+
+.hero .hero-img {
+  background-size: cover;
+  position: relative;
+}
+
+.hero-img-darken::before {
+  background: rgba(0, 0, 0, 0.6);
+  content: '';
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+#cloud-site .hero header {
+  align-items: flex-end;
+  min-height: 368px;
+}
+
+#cloud-site .hero .hero-title,
+#cloud-site .hero .hero-title h1 {
+  color: #fff;
+  font: 400 48px/56px Roboto;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, .3);
+  text-transform: none;
+}
+
+#cloud-site .hero .hero-title {
+  margin-bottom: 56px;
+  margin-left: 5%;
+  width: 50%;
+  z-index: 1;
+}
+
+#cloud-site .hero .hero-title h1 {
+  margin: 0;
+  word-break: break-word;
+}
+
+.w-840 {
+  margin-left: 5%;
+  max-width: 860px;
+  padding-right: 20px;
+  width: 60.5vw;
+}
+
+.callout-section {
+  margin: 64px 0 28px;
+}
+
+.callout {
+  max-width: 280px;
+}
+
+.callout p {
+  border-bottom: 4px solid #4183f0;
+  border-top: 4px solid #4183f0;
+  color: #414141;
+  font: 400 30px/42px Roboto;
+  margin: 0 0 0 36px;
+  padding: 36px 0;
+}
+
+.headline-big {
+  color: #747474;
+  font: 400 30px/40px Roboto;
+  margin: 0 0 28px;
+  padding: 0;
+}
+
+.headline-small {
+  color: #333;
+  font: 700 24px/28px Roboto;
+  margin: 28px 0;
+  padding: 0;
+}
+
+.callout-section .headline-small,
+.callout-section .paragraph {
+  margin-top: 0;
+}
+
+ul.list-items {
+  padding-left: 20px;
+  margin: 28px 0;
+}
+
+ul.list-items li {
+  color: #747474;
+  font: 500 16px/28px Roboto;
+  margin: 0;
+}
+
+.paragraph {
+  color: #666666;
+  font: normal 16px/28px Roboto;
+  margin: 28px 0;
+}
+
+p.paragraph:last-of-type {
+  margin-bottom: 0;
+}
+
+.image {
+  margin: 64px 0;
+}
+
+.video {
+  margin: 64px 0;
+  max-width: 700px;
+}
+
+.image-caption {
+  border-bottom: 1px solid #c7c7c7;
+  color: #9d9d9d;
+  font: italic 14px/22px Roboto;
+  max-width: 700px;
+  padding: 28px 0 22px 0;
+}
+
+.quote {
+  background-color: #2b85e7;
+  color: #fff;
+  margin: 64px auto;
+  text-align: center;
+}
+
+.quote p {
+  color: #fff;
+  font: normal 24px/34px roboto;
+}
+
+.products {
+  margin: 20px auto;
+  width: 360px;
+}
+
+.products span {
+  background-color: #eceff1;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  cursor: pointer;
+  display: inline-block;
+  font: normal 14px/26px roboto;
+  margin: 4px;
+  padding: 2px 12px;
+}
+
+.products span a,
+.products span a:visited {
+  color: #333;
+  text-decoration: none;
+}
+
+.products li img {
+  height: 30px;
+}
+
+.products li a {
+  line-height: 30px;
+  padding-left:16px;
+}
+
+.related-casestudies {
+  align-items: center;
+  background: #fff;
+  margin: 72px 5% 0 5%;
+  padding: 72px 80px;
+}
+
+.related-casestudies h3 {
+  flex: 33%;
+  margin: 0;
+}
+
+.related-casestudies ul {
+  display: flex;
+  flex-direction: column;
+  flex: 66%;
+  justify-content: center;
+  list-style: none;
+  padding-left: 32px;
+}
+
+#cloud-site .related-casestudies .text {
+  margin: 28px 0;
+}
+
+#cloud-site .casestudy-link {
+  font: normal 16px/28px Roboto;
+  position: relative;
+}
+
+#cloud-site .casestudy-link,
+#cloud-site .casestudy-link:visited {
+  color: #666;
+  text-decoration: none;
+}
+
+.casestudy-link:after {
+  background-color: #039be5;
+  background-image: url(//www.gstatic.com/images/icons/material/system/1x/arrow_upward_white_24dp.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 50%;
+  content: '';
+  display: inline-block;
+  height: 15px;
+  margin-left: 17px;
+  transform: rotateZ(90deg);
+  vertical-align: middle;
+  width: 15px;
+}
+
+.aside-content-block {
+  position: absolute;
+  right: 5%;
+  top: 276px;
+}
+
+.free-trial {
+  background: #2b85e7;
+  color: #fff;
+  padding: 30px;
+  text-align: center;
+  width: 360px;
+}
+
+.free-trial h3 {
+  font: normal 24px/28px Roboto;
+  text-transform: uppercase;
+}
+
+.free-trial h4 {
+  font: normal 16px/24px Roboto;
+}
+
+.customer-hub-link {
+  margin:  0 0 16px;
+}
+
+.contact-section,
+.customer-section,
+.partner-section {
+  background: #fff;
+  margin-bottom: 20px;
+  padding: 40px 28px 20px;
+  width: 360px;
+}
+
+.contact-section h4 {
+  color: #202124;
+  font: normal 16px/20px Roboto;
+}
+
+.partner-section {
+  padding-bottom: 48px;
+}
+
+.customer-section p,
+.partner-section p {
+  margin: 24px 0;
+}
+
+.customer-section .logo,
+.partner-section .logo {
+  margin: 0 0 24px 0;
+  max-height: 60px;
+  max-width: 140px;
+}
+
+.customer-section > .logo.logo-wide,
+.partner-section .logo-wide {
+  max-width: 100%;
+}
+
+.location, .industry {
+  color: #666666;
+  font: normal 18px/30px Roboto;
+  margin: 28px 0;
+}
+
+.hr-center {
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+}
+
+.label {
+  font-weight: 700;
+}
+
+.aside-content-block.is-hidden-on-mobile .headline-big {
+  font: 400 28px/38px Roboto;
+}
+
+.aside-content-block.is-hidden-on-mobile .paragraph {
+  font: normal 14px/26px Roboto;
+}
+
+.aside-content-block.is-hidden-on-mobile .free-trial h3 {
+  font: normal 22px/26px Roboto;
+}
+
+.aside-content-block.is-hidden-on-mobile .free-trial h4 {
+  font: normal 14px/22px Roboto;
+}
+
+@media only screen and (min-width: 1025px) {
+  .is-hidden-on-desktop {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .products,
+  .contact-section,
+  .customer-section,
+  .partner-section,
+  .free-trial {
+    width: 325px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .w-840 {
+    width: 57vw;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .w-840 {
+    margin-left: 0;
+    max-width: 100%;
+    padding: 0 28px;
+    width: 100%;
+  }
+
+  #cloud-site .hero .hero-title {
+    margin-right: 5%;
+    width: 100%;
+  }
+
+  .customer-section,
+  .partner-section {
+    padding: 0 28px;
+  }
+
+  .contact-section {
+    padding: 20px 28px 28px;
+  }
+
+  .callout-section {
+    flex-direction: column;
+  }
+
+  .callout {
+    margin-bottom: 36px;
+    max-width: 100%;
+    order: 1;
+  }
+
+  .callout p {
+    margin: 0;
+  }
+
+  .callout-section .left {
+    order: 2;
+  }
+
+  #cloud-site .aside-content-block.is-hidden-on-desktop {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 28px;
+    position: relative;
+    right: 0;
+    top: 0;
+  }
+
+  .is-hidden-on-desktop .industry,
+  .is-hidden-on-desktop .location {
+    font-size: 16px;
+    margin: 18px 0;
+  }
+
+  .is-hidden-on-desktop .products_mobile,
+  .is-hidden-on-desktop .products-mobile {
+    font: normal 16px/32px Roboto;
+  }
+
+  #cloud-site .is-hidden-on-desktop .products_mobile span a,
+  #cloud-site .is-hidden-on-desktop .products_mobile span a:visited,
+  #cloud-site .is-hidden-on-desktop .products-mobile span a,
+  #cloud-site .is-hidden-on-desktop .products-mobile span a:visited {
+    color: #1a73e8;
+    text-decoration: none;
+  }
+
+  .is-hidden-on-desktop .free-trial {
+    width: 100%;
+  }
+
+  #cloud-site section.aside-content-block.is-hidden-on-desktop .contact-section,
+  #cloud-site section.aside-content-block.is-hidden-on-desktop .customer-section,
+  #cloud-site section.aside-content-block.is-hidden-on-desktop .partner-section {
+    background: none;
+    width: 100%;
+  }
+
+  #cloud-site section.aside-content-block.is-hidden-on-mobile {
+    display: none;
+  }
+
+  .related-casestudies {
+    align-items: center;
+    flex-direction: column;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 72px 28px;
+  }
+
+  .related-casestudies h3 {
+    margin-bottom: 24px;
+    width: fit-content;
+  }
+
+  #cloud-site .related-casestudies .text {
+    margin-top: 0;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  #cloud-site .l-content {
+    padding: 32px 28px;
+  }
+
+  #cloud-site .hero .hero-title {
+    font-size: 40px;
+  }
+}
+
+      </style><style>
+      .hero-img {
+        background: no-repeat url(https://lh3.googleusercontent.com/7ZPCcCD8kpwS1zBcusiAUE21qZYKRgqSnDj_5PHQKzAR0UWolxIKLPS7S4H1WSvFTBTDg772BblmG-9ZvXUwHqwmHKofCjLMKO2BpQ=w1440);
+      }
+      </style>
+  
+  
+  
+
+  <div class="devsite-article-meta nocontent" role="navigation">
+    
+    
+    <ul class="devsite-breadcrumb-list" aria-label="Breadcrumb">
+  
+  <li class="devsite-breadcrumb-item
+             ">
+    
+    
+    
+      
+  <a href="https://cloud.google.com/" class="devsite-breadcrumb-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Breadcrumbs" data-value="1" track-type="globalNav" track-name="breadcrumb" track-metadata-position="1" track-metadata-eventdetail="Google Cloud">
+    
+        ホーム
+      
+  </a>
+  
+    
+  </li>
+  
+  <li class="devsite-breadcrumb-item
+             ">
+    
+      
+      <div class="devsite-breadcrumb-guillemet material-icons" aria-hidden="true"></div>
+    
+    
+    
+      
+  <a href="https://cloud.google.com/customers" class="devsite-breadcrumb-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Breadcrumbs" data-value="2" track-type="globalNav" track-name="breadcrumb" track-metadata-position="2" track-metadata-eventdetail="">
+    
+        お客様
+      
+  </a>
+  
+    
+  </li>
+  
+</ul>
+    
+  </div>
+  
+  
+
+  <devsite-toc class="devsite-nav" devsite-toc-embedded="" disabled="">
+  </devsite-toc>
+
+  
+
+  <div class="devsite-article-body clearfix
+    devsite-no-page-title">
+
+    
+      
+    
+    <article id="cloud-site">
+      <div class="background-grey full-bleed-section">
+        <section class="hero l-space-bottom-5">
+          <div class="hero-img hero-img-darken">
+            <header class="flex">
+              <div class="hero-title">
+                <h1 id="repl.it:-a-collaborative-cloud-development-environment-for-work-and-the-classroom" data-text="                   Repl.it: A collaborative cloud development environment for work and the classroom                 ">
+                  Repl.it<br/>仕事にも教室でも使えるクラウド共同開発環境
+                </h1>
+              </div>
+            </header>
+          </div>
+        </section>
+
+        <section class="story-content-block">
+          <div class="w-840">
+                       
+            <h1 class="headline-big" id="repl.it-is-building-a-first-of-its-kind-online-development-environment-for-students-and-developers-to-learn,-collaborate,-build,-host,-and-ship-applications." data-text="               Repl.it is building a first-of-its-kind online development environment for students and developers to learn, collaborate, build, host, and ship applications.             ">
+              Repl.itは、学生や開発者がアプリケーションを学び、コラボレーションし、構築し、ホストし、出荷するための、世界初のオンライン開発環境を構築しています。
+            </h1>
+            <div>
+              <div class="flex callout-section">
+                <div class="flex-1 left">
+                  <h2 class="headline-small" id="google-cloud-results" data-text="                     Google Cloud Results                   ">
+                    Google Cloud による成果
+                  </h2>
+                  <ul class="list-items">
+                    <li>開発者や学生の共同学習やデプロイメントに対応するため、必要に応じてスケールアップやスケールダウンが可能である
+                    </li>
+                    <li>Google Container Registryを使用して、ネットワークを介さずにビルドのプッシュ/プルを迅速かつ安全に行うことができる。
+                    </li>
+                    <li>使いやすいGoogle CLIで開発者と学生の体験を向上させる
+                    </li>
+                  </ul>
+                </div>
+                <div class="callout">
+                  <p>
+                    月間アクティブユーザー数100万人
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-840">
+            <div>
+              <p class="paragraph">
+               <a href="https://repl.it/" rel="noopener" target="_blank">Repl.it</a>は、従来は一人で楽しむものと考えられていたものを、クラウド上で多人数で楽しめるようにすることで、ソフトウェア開発や教育に革命をもたらしています。
+              </p>
+              <p class="paragraph">
+                Repl.itのCEO兼共同設立者であるAmjad Masadは「月間100万人のプログラマーを突破しました」と語ります。プログラミングを身近なものにし、ソフトウェアの開発と共有を容易にする」というたった一つのミッションに人生の大半を捧げてきた Amjad にとって、このマイルストーンは大きな誇りです。
+              </p>
+              <p class="paragraph">
+                より良いプログラミング体験を提供したいという Amjad の情熱は、数年前、Codecademyの創設エンジニアとして働いていたときに始まりました。Codecademyは、4,500万人のユーザー、特に十分なサービスを受けていないコミュニティのユーザーに、12種類以上の言語による無料のプログラミングレッスンを提供しています。それは、教室だけでなく、商業的な開発者のためにも、これまでにないオンライン開発環境を構築することでした。
+              </p>
+              <p class="paragraph">
+                同社のサービスは2つのグループに人気があります。学生にとっては、Repl.itはプラグアンドプレイの教室用リソースです。米国の幼稚園から12年生までの学校の約20％が、コードジャムやハッカソンなどの活動でRepl.itを利用しています。開発者にとっては、Repl.itは共同作業が可能なライブワーク環境であり、Webサービスのホスティング、製品のパッケージング、アプリケーションの出荷など、より高度な機能を構築し、反復して利用することができます。
+              </p>
+            </div>
+            <div class="quote">
+              <div class="l-content l-clearfix">
+                <p>
+                  あるCPUのしきい値に達すると、Google Cloud Load Balancingは新しいインスタンスをインスタンス化し、必要に応じてアップダウンします。
+                </p><span><em>Repl.it、CEO兼共同設立者、Amjad Masad</em>氏</span>
+              </div>
+            </div>
+          </div>
+          <div class="w-840">
+            <div>
+              <p class="paragraph">
+                通常、60カ国以上、7万人もの開発者がRepl.itを介して共同作業を行っています。彼らはRepl.itのマルチプレイヤー機能を利用して、Repl.itの共有コンテナで作業を行い、Repl.itがサポートする47の言語のいずれかまたは複数の言語でプログラミングを行います。Repl.itは、統合開発環境（IDE）のブラウザに言語サポートを組み込んでいます。
+              </p>
+              <p class="paragraph">
+                開発者や学生にとって、Repl.itは、サードパーティ製パッケージの入手、セットアップ、サポート、デバッグ、IDEへの追加にかかる時間を最小限に抑えるという、実質的な価値を提供します。開発者や学生は「数秒でコーディングセッションに参加し、すぐに他の人とコラボレーションしたい」とRepl.itのデザイナーであるHaya Abdallaは言います。そのために、ソフトウェアを対話的に書き、遅延なく実行することをサポートするシェルUI「REPL」から名前をとったと、Haya氏は付け加えます。
+              </p>
+            </div>
+          </div>
+          <div class="w-840">
+            <div>
+              <p class="paragraph">
+                最も注目すべき点は、7人のスタッフで、これだけ多くの開発者にフルサービスを提供していることでしょう。Repl.itのチームは、<a href="https://cloud.google.com/">Google Cloud Platform</a>（GCP）と<a href="https://cloud.google.com/kubernetes-engine/">Google Kubernetes Engine</a>を利用してDevOpsチームの効率を高め、プラットフォームの管理と拡張に時間を割いています。
+              </p>
+            </div>
+          </div>
+          <div class="w-840">
+            <div>
+              <h2 class="headline-small" id="from-a-single-vm-to-the-cloud" data-text="                 From a single VM to the cloud               ">
+                1台のVMからクラウドへ
+              </h2>
+              <p class="paragraph">
+                Repl.itは、<a href="https://cloud.google.com/developers/startups/">Google Cloud for Startups</a>と協力することで、柔軟なパートナー関係と信頼できる技術環境を手に入れました。アムジャドと彼のチームは、<a href="https://cloud.google.com/">Google Cloud</a>と協力して、Repl.itのエコシステムを構成するRedisデータベースやコンテナなどのレガシーなオープンソース部品を、スケーラブルなクラウドベースのプラットフォームに統合しました。
+              </p>
+              <p class="paragraph">
+                Repl.itプラットフォームは、Digital Ocean上のDropletという1台の仮想マシンから始まりました。Amjadは、セキュアシェルプロトコル（SSH）と<a href="https://www.atlassian.com/git/tutorials/setting-up-a-repository/git-clone" rel="noopener" target="_blank">git clone</a>を使用してデプロイしました。2年足らずでユーザーコミュニティが100万人に達したRepl.itの成功は、新たな課題をもたらしました。
+              </p>
+              <p class="paragraph">
+                当初の課題は実行環境、つまり開発者がコードを安全かつ同時に実行できるようにするコンテナシステムでした。このシステムは急速に成長し、需要に応じて拡張する必要のある、急速に拡大する分散システムへと変化しました。
+              </p>
+              <p class="paragraph">
+                この規模のインフラを構築、デプロイ、維持するための解決策を見つけることは、Digital OceanのDroplets環境を圧倒しました。「自分たちで<a href="https://redis.io/" rel="noopener" target="_blank">Redis</a>を管理し、自分たちでDockerコンテナレジストリを管理していました」「スケールアップが必要になったとき、より良いデプロイプロセスに移行しなければなりませんでした。」とAmjad氏は振り返ります。
+              </p>
+              <p class="paragraph">
+                Repl.itは最初にAWSを利用しましたが、組織のニーズを満たすものではありませんでした。"ドキュメントは役に立たず、Cloud Deployは期待通りに機能せず、AWSチームからのサポートも全般的に不足していました」とAmjad氏は言います。これがGCPへの移行のきっかけとなりました。
+              </p>
+            </div>
+            <div class="quote">
+              <div class="l-content l-clearfix">
+                <p>
+                  "Googleのコマンドラインインターフェースはとてもよくできています。探索しやすいし、ドキュメントも見つけやすい。"
+                </p><span><em>Repl.it、CEO兼共同設立者、Amjad Masad</em>氏</span>
+              </div>
+            </div>
+          </div>
+          <div class="w-840">
+            <div>
+              <h2 class="headline-small" id="cloud-partnering-to-scale-legacy-open-source" data-text="                 Cloud partnering to scale legacy open source               ">
+                レガシーなオープンソースを拡張するためのクラウド提携
+              </h2>
+              <p class="paragraph">
+                現在、Repl.itはAnsibleを使用してデプロイメントをプッシュし、GCPの<a href="https://cloud.google.com/container-registry/">Container Registry</a>でインスタンステンプレートを作成しています。<a href="https://cloud.google.com/memorystore/">Cloud Memorystore</a>は、Redisデータベース用の低レイテンシーのインメモリーストアを提供します。<a href="https://cloud.google.com/compute/">Compute Engine</a>は、インスタンスグループを自動的にスケーリングします。
+              </p>
+              <p class="paragraph">
+                Repl.it の実行環境では、約 10,000 個の同時実行可能なコンテナをサポートする必要があるため、これは非常に重要な要素です。一定のCPU閾値を超えると、<a href="https://cloud.google.com/load-balancing/">Google Cloud Load Balancing</a>が新しいインスタンスをインスタンス化し、必要に応じてアップダウンします。
+              </p>
+            </div>
+          </div>
+          <div class="w-840">
+            <div>
+              <figure class="image">
+                <img src="https://lh3.googleusercontent.com/VgeSqzYnAD7b3fxTU4wA25W27rtCykZ9FJSKaX1N2MXOJe2r0NC4y34tjhMeC5KDfhBelsfdDqbqMstfj51Zd4czBxTJZlPJPkSTQ1c=w700" alt="Repl.it uses Google Container Registry and Cloud Storage to more securely and responsively manage Docker images and build and deploy pipelines. A proxy prefix handles the persistent links for containers. Cloud Memorystore provides a scalable, low-latency, in-memory store for the extremely distributed Repl.it Redis database. The REPL functionality is coded in the browsers used by developers and classroom coders. BigQuery interacts with Segment.com to capture metrics showing how Repl.it communities use site components." data-pin-nopin="true" />
+                <figcaption class="image-caption">
+                  Repl.itは、Google Container RegistryとCloud Storageを使用して、Dockerイメージとビルドおよびデプロイパイプラインをより安全かつ迅速に管理します。プロキシ・プレフィックスは、コンテナの永続的なリンクを処理します。Cloud Memorystoreは、極めて分散化されたRepl.it Redisデータベースのために、スケーラブルで低レイテンシーのインメモリ・ストアを提供します。REPLの機能は、開発者や教室のコーダーが使用するブラウザでコーディングされています。BigQueryはSegment.comと連動し、Repl.itコミュニティによるサイト・コンポーネントの使用状況を示すメトリクスを取得します。
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+          <div class="w-840">
+            <div>
+              <h2 class="headline-small" id="a-code-in-the-browser-environment" data-text="                 A code-in-the-browser environment               ">
+                コード・イン・ザ・ブラウザの環境
+              </h2>
+              <p class="paragraph">
+                Repl.itのGCPとの統合が進むにつれ、Amjadは、<a href="https://cloud.google.com/storage/">クラウドストレージ</a>とのコミュニケーションをより迅速に行うための新しいコードインザブラウザのソリューションを見つけました。この技術革新は、 Amjad が以前から持っていたエンジニアリングの専門知識によってもたらされました。
+              </p>
+              <p class="paragraph">
+                2010年、ヨルダンのPrincess Sumaya Universityでコンピュータサイエンスを専攻していたAmjadは、開発環境を整えるプロセスにうんざりしていましたが、ブラウザにはコーディング作業を効率化する大きな可能性があると確信しました。彼は、最初のオープンソースのブラウザ内REPLの構築に着手しました。米国のいくつかの企業はすぐにその価値を認め、Codecademy社もその価値を認めて、教室のプラットフォームに統合しました。
+              </p>
+              <p class="paragraph">
+                Amjadの新しいクラウドベースのブラウザ環境は、Cloud Storageの署名付きURLの機能を利用しています。Repl.it IDEのブラウザは、新しいファイルを作成する際に、ウェブサーバから署名付きURLを取得して、Cloud Storageにファイルを作成します。このようにして、ブラウザはCloud Storageに直接書き込み、Cloud Storageから読み取ることができるのです。これにより、Repl.itはCloud Storageを利用して、ファイルとファイルシステムを同期させることができます。
+              </p>
+            </div>
+            <div class="quote">
+              <div class="l-content l-clearfix">
+                <p>
+                  "スタートアップ企業に言いたいのは、スケールアップする前に、Google Cloud Platformが提供するスタートアップ用のプログラミングで独自のアーキテクチャを活用し、Googleスタッフのエンジニアと話をすることです。"
+                </p><span><em>Repl.it、CEO兼共同設立者、Amjad Masad</em>氏</span>
+              </div>
+            </div>
+          </div>
+          <div class="w-840">
+            <div>
+              <h2 class="headline-small" id="integration-flexibility,-well-designed-uis" data-text="                 Integration flexibility, well-designed UIs               ">
+                統合の柔軟性、優れたデザインのUI
+              </h2>
+              <p class="paragraph">
+                Repl.itは、Google Cloudの新機能を利用して、<a href="https://cloud.google.com/functions/">Cloud Functions</a>のオンデマンド課金の柔軟性をコンテナの世界にもたらしています。「これでさらにコストを下げることができ、お客様にはここで本番システムを構築し、当社のIDEを介してGoogle Cloud上でホストするという柔軟性を提供することができます」とAmjad氏は言います。
+              </p>
+              <p class="paragraph">
+               <a href="https://cloud.google.com/bigquery/">BigQuery</a>は Repl.it のユーザー理解を深めます。Repl.itは毎日BigQueryを使用しています。BigQueryはレガシーのSegment.comプロキシと連動しており、学生や開発者がどのようにサイトを利用しているかを示すメトリクスを取得しています。Amjad氏は、より多くのイベントをキャプチャし、コンポーネントの使用状況を表示するBigQueryの新しいUIに興奮しています。
+              </p>
+              <p class="paragraph">
+                Repl.itは、GCPに搭載された新しいインタラクティブなクラウドコマンドラインインターフェイス（CLI）が、学生や開発者にとって最適だと考えています。"実によくデザインされています" とAmjad氏は説明します。"探索しやすく、ドキュメントも見つけやすいです。"また、彼はCLIの自動更新機能も気に入っています。Google Cloudの新バージョンがリリースされると、CLIは自動的にユーザーに同期を取るよう促します。
+              </p>
+              <p class="paragraph">
+                スタートアップ企業では、スケーラビリティが発生するまで心配してはいけないという考え方があり、その大部分は正しいと言えます。しかし、実際にスケールアップしてしまうと、大変なことになります」。彼は笑いながら、こうアドバイスします。スタートアップ企業に言いたいのは、規模を拡大する前に、Google Cloud Platformが提供するスタートアップ用のプログラミングで独自のアーキテクチャを活用し、Googleのスタッフエンジニアと話をすることです。
+              </p>
+            </div>
+          </div>
+          <div class="w-840">
+            <div>
+              <h2 class="headline-small" id="contributors-to-this-story" data-text="                 Contributors to this story               ">
+                この記事への貢献者
+              </h2>
+              <p class="paragraph">
+               <b>Amjad Masad</b>:Repl.itのCEO兼共同創業者。Amjadは、2016年にRepl.itを立ち上げる前は、Codecademyの創設エンジニアであり、Facebookの開発者ツールを作成していました。<br>
+                <br>
+               <b>ハヤ・アブダラ</b>Repl.itデザイナー兼共同創業者。フルスタックUXデザイナーであるHayaは、Repl.itの情報アーキテクチャ、ウェブサイト、UIを開発しました。
+              </p>
+            
+              <h2 class="headline-small" id="contributors-to-this-story" data-text="                 Contributors to this story               ">Repl.itについて</h>
+              </h1>
+              <p class="paragraph">
+                Repl.itは、オンラインでの共同開発や教室でのコーディングのために、フル機能を備えたサーバーレスのハブを構築しています。サンフランシスコを拠点とし、2016年に設立されたRepl.itは、急増する開発者や学生に対応するため、ソリューションをクラウドに移行しました。
+              </p>
+
+
+
+            </div>
+          </div>
+        </section>
+        <section class="aside-content-block is-hidden-on-mobile">
+          </div>
+
+          
+
+    <script nonce="0Z9aNbCsHUoPrYZgiR1FQkY4f1ng8N">
+  
+  (function(d,e,v,s,i,t,E){d['GoogleDevelopersObject']=i;
+    t=e.createElement(v);t.async=1;t.src=s;E=e.getElementsByTagName(v)[0];
+    E.parentNode.insertBefore(t,E);})(window, document, 'script',
+    'https://www.gstatic.com/devrel-devsite/prod/v1674d466be3b1154327dd11cf186e748303b1e92ae31ff35df0f5192fbd777ea/cloud/js/app_loader.js', '[2,"en",null,"/js/devsite_app_module.js","https://www.gstatic.com/devrel-devsite/prod/v1674d466be3b1154327dd11cf186e748303b1e92ae31ff35df0f5192fbd777ea","https://www.gstatic.com/devrel-devsite/prod/v1674d466be3b1154327dd11cf186e748303b1e92ae31ff35df0f5192fbd777ea/cloud","https://cloud-dot-devsite-v2-prod.appspot.com",1,null,["/_pwa/cloud/manifest.json","https://www.gstatic.com/devrel-devsite/prod/v1674d466be3b1154327dd11cf186e748303b1e92ae31ff35df0f5192fbd777ea/images/video-placeholder.svg","https://www.gstatic.com/devrel-devsite/prod/v1674d466be3b1154327dd11cf186e748303b1e92ae31ff35df0f5192fbd777ea/cloud/images/favicons/onecloud/favicon.ico","https://www.gstatic.com/devrel-devsite/prod/v1674d466be3b1154327dd11cf186e748303b1e92ae31ff35df0f5192fbd777ea/cloud/images/cloud-logo.svg","https://fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto:400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700|Material+Icons"],1,null,[1,6,8,12,14,17,21,25,40,45,50,63,70,75,76,80,87,88,91,92,93,97,98,100,101,102,103,105,107,108,111,112,113,115,117,118,120,122,123,124,125,127,129,131,132,133,134,135,136],"AIzaSyAP-jjEJBzmIyKR4F-3XITp8yM9T1gEEI8","AIzaSyB6xiKGDR5O3Ak2okS4rLkauxGUG7XP0hg"]')
+  
+</script>
+    <devsite-a11y-announce></devsite-a11y-announce>
+  </body>
+</html>
